@@ -25,7 +25,7 @@ public class VisitController {
 
     @RequestMapping("/")
     public String home() {
-        return "Welcome to PetClinic Visits.";
+        return "Welcome to PetClinic Visits!!";
     }
     
     /*private final VisitRepository visits;
