@@ -15,11 +15,19 @@
  */
 package org.springframework.samples.petclinic.visit;
 
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@SpringBootApplication
 public class VisitController {
 
+    @RequestMapping("/")
+    public String home() {
+        return "Welcome to PetClinic Visits.";
+    }
+    
     /*private final VisitRepository visits;
     private final PetRepository pets;
 
